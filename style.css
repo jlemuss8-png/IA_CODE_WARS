@@ -1,0 +1,155 @@
+/* 1. Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f4f9;
+    color: #263238;
+}
+
+/* 2. Encabezado */
+header {
+    background-color: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 5px;
+    color: #dce6f2;
+}
+
+/* 3. Contenedor principal */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+/* 4. Secciones */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #172b4d;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5eaf1;
+    padding-bottom: 12px;
+}
+
+/* 5. Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2878c8;
+    box-shadow: 0 0 4px rgba(40, 120, 200, 0.3);
+}
+
+/* 6. Botones */
+button {
+    background-color: #1769aa;
+    color: white;
+    border: none;
+    padding: 13px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #104f83;
+}
+
+/* 7. Área de búsqueda */
+#busqueda {
+    margin-bottom: 20px;
+}
+
+/* 8. Tarjetas de expedientes */
+#lista-expedientes h3 {
+    color: #172b4d;
+    margin-bottom: 12px;
+}
+
+#lista-expedientes h4 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    color: #1769aa;
+}
+
+#lista-expedientes p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+#lista-expedientes textarea {
+    margin-top: 10px;
+}
+
+/* 9. Pie de página */
+footer {
+    background-color: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* 10. Adaptación a celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI CODE WARS - Gestión de Expedientes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>AI CODE WARS</h1>
+        <p>Sistema de Gestión de Expedientes</p>
+        <p>Bufete Popular</p>
+    </header>
+
+    <main>
+
+        <section id="registro">
+            <h2>Registrar nuevo expediente</h2>
+
+            <form id="formulario-expediente">
+
+                <label for="solicitante">Nombre del solicitante:</label>
+                <input type="text" id="solicitante" required>
+
+                <label for="asunto">Descripción del asunto:</label>
+                <textarea id="asunto" required></textarea>
+
+                <label for="responsable">Persona responsable:</label>
+                <input type="text" id="responsable" required>
+
+                <button type="submit">Registrar expediente</button>
+
+            </form>
+        </section>
+
+        <section id="consulta">
+            <h2>Consultar expedientes</h2>
+
+            <input
+                type="search"
+                id="busqueda"
+                placeholder="Buscar por código o solicitante..."
+            >
+
+            <div id="lista-expedientes">
+                <!-- Aquí aparecerán los expedientes registrados -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AI CODE WARS - Proyecto de Gestión de Expedientes</p>
+    </footer>
+
+</body>
+</html>
